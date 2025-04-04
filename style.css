@@ -1,0 +1,879 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Seção da nav-bar */
+.header-main-container{
+    background-image: url(assets/header-bg.png);
+    background-repeat: no-repeat;      background-position: center;
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-dark{
+    padding: 2rem;
+    margin-left: 7rem;
+}
+
+.logo-white{
+    display: none;
+}
+
+.nav-bar{
+    font-size: 20px;
+    margin-bottom: 5rem;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 3rem;
+    margin-right: 2rem;
+    list-style: none;
+}
+
+.nav-links > a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: brown;
+}
+
+.menu-burguer{
+    display: none;
+}
+
+/* Seção do Hero */
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 50vh;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -8rem;
+    gap: 2rem;
+}
+
+.text-hero-pontilhada{
+    border: 2px dotted black;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.week-text-hero{
+    font-size: 4.5rem;
+    display: flex;
+    margin-left: 15rem;
+    color: #5C2E00;font-weight: 900px;
+    text-shadow: 2px 2px 2px white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagem-hero img{
+    position: relative;
+    top: -10rem;
+    right: 10rem ;
+    width: 35rem;
+    margin-top: 2rem;
+}
+
+/* Seção dos Banners */
+.section-banners{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: center;
+    margin-right: 10rem;
+    margin-top: 7rem;
+}
+
+.banner-1{
+    position: relative;
+    right: -4rem;
+    grid-row: span 2; 
+}
+
+.banner-2{
+    width: 100%;
+}
+
+.banner-3{
+    width: 100%;
+    position: relative;
+    top: -5rem;
+}
+
+.banner-1 > img, .banner-2 > img, .banner-3 > img{
+    border-radius: 25px;
+}
+
+.titulo-banner-1{
+    transform: translateY(-25rem);
+    padding-right: 10rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.sub-banner-1{
+    transform: translateY(-24rem);
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.titulo-banner-2{
+    transform: translateY(-11rem);
+    padding-right: 5rem;
+    font-size: 30px;
+    color: white;
+}
+
+.sub-banner-2{
+    transform: translateY(-10rem);
+    padding-right: 15rem;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.sub-banner-2 > strong{
+    display: flex;
+    padding-left: 2.5rem;
+}
+
+.titulo-banner-3{
+    transform: translateY(-11rem);
+    padding-right: 10rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.sub-banner-3{
+    transform: translateY(-10rem);
+    padding-right: 11.5rem;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+/* Seção dos Hamburguers */
+.Hamburguers{
+    text-align: center;
+}
+
+.sub-title-burguers{
+    background: rgb(253, 165, 41);
+    padding: 1.5rem;
+    margin-right: 35rem;
+    margin-left: 35rem;
+    font-size: 17px;
+    margin-bottom: 3rem;
+}
+
+.title-burguers{
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    color: #5C2E00;
+    text-shadow: 2px 2px 3px rgb(243, 140, 76);
+    margin-bottom: 2rem;
+}
+
+.paragrafo-buguers{
+    display: block;
+    border: 2px solid transparent;
+    font-size: 20px;
+    width: 55rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.card-item-1 > img, .card-item-2 > img, .card-item-3 > img{
+    width: 250px;
+    margin-bottom: 2rem;
+}
+
+.card-item-1, .card-item-2, .card-item-3{
+    width: 450px;
+    transition: all 0.3s ease;
+    margin-left: 2rem;
+    height: 500px;
+}
+
+.card-item-1:hover, .card-item-2:hover, .card-item-3:hover{
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.179);
+    border-radius: 15px;
+}
+
+.titulo-card-1, .titulo-card-2, .titulo-card-3{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1.3rem;
+}
+
+.paragrafo-card-1, .paragrafo-card-2, .paragrafo-card-3{
+    display: block;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.button-cards{
+    padding: 15px;
+    background: #ff0000;
+    color: white;
+    font-size: 15px;cursor: pointer;
+    border: none;
+}
+
+/*Seção dos Eventos*/
+.event{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 85rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    margin-bottom: 5rem;
+}
+
+.event-texts{
+    margin-left: 10rem;
+}
+
+.sub-events{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.title-events{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px rgb(255, 80, 22);
+    margin-bottom: 2rem;
+}
+
+.title-events > strong{
+    display: flex;
+}
+
+.paragrafo-events{
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.events-img{
+    margin-right: 7rem;
+}
+
+.events-img > img{
+    width: 35rem;
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+}
+
+/* Seção da reserva de mesa */
+.resevarion{
+    width: 100vw;
+    margin-bottom: 5rem;
+}
+
+.containe-reservation{
+    text-align: center;
+}
+
+.sub-reserva{
+    font-size: 2rem;
+}
+
+.title-reserva{
+    font-size: 3rem;
+    color: #5C2E00;
+    text-shadow: 1px 2px 5px rgba(255, 124, 48, 0.899);
+}
+
+.inputs-container-reserva{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.inputs-container-reserva{
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+
+.inputs-container-reserva > input{
+    height: 3rem;
+    padding: 15px;
+    outline: none;
+}
+
+.reservar-button{
+    background: #ff4747;
+    color: white;
+    border-style: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.reservar-button:hover{
+    background: #5C2E00;
+}
+
+/* Seção footer */
+.footer{
+    display: flex;
+    background-image: url(assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 450px;
+}
+
+.logo-footer{
+    width: 15rem;
+    margin: 2rem;
+}
+
+.footer-Paragrafo{
+    margin-left: 2rem;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-welcome{
+    margin-left: 5rem;
+}
+
+.locals-emails-footer > i{
+    display: flex;
+    position: relative;
+    line-height: 3rem;
+    top: 10rem;
+    left: 15rem;
+    color: white;
+}
+
+.paragrafos-i{
+    margin-left: 1.5rem;
+}
+
+
+/* Versões Responsivas */
+/* Tablets / telas compridas */
+@media (max-width: 1115px) {
+
+    .week-text-hero{
+        margin-right: 10rem;
+    }
+
+    .imagem-hero > img{
+        position: relative;
+        left: -10rem;
+        top: -5rem;
+    }
+
+    .section-banners{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: auto;
+    }
+
+    .banner-1{
+        position: relative;
+        top: 4rem;
+        margin-right: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .sub-banner-2 > strong{
+        margin-left: 14.5rem;
+    }
+
+    .sub-title-burguers{
+        width: 20rem;
+        margin: auto;
+        font-size: 21px;
+    }
+
+    .title-burguers{
+        margin-top: 2rem;
+    }
+
+    .paragrafo-buguers{
+        width: 45rem;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .sub-events{
+        font-size: 3rem;
+    }
+
+    .paragrafo-events{
+        font-size: 2rem;
+        margin-right: 5rem;
+    }
+
+    .events-img > img{
+        position: relative;
+        left: 3rem;
+    }
+
+    .resevarion{
+        display: flex;
+        margin-left: 10rem;
+    }
+
+    .inputs-container-reserva{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 45%;
+        position: relative;
+        right: 5rem;
+    }
+
+    .reservar-button{
+        height: 3rem;
+    }
+
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .locals-emails-footer{
+        position: relative;
+        top: -8rem;
+    }
+}
+
+@media (max-width: 885px) {
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero{
+        text-align: center;
+    }
+
+    .week-text-hero{
+        margin-right: 15rem;
+    }
+
+    .imagem-hero > img{
+        position: relative;
+        left: 1rem;
+        top: -15rem;
+    }
+
+    .section-banners{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: auto;
+    }
+
+    .banner-1{
+        position: relative;
+        top: 4rem;
+        margin-right: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .sub-banner-2 > strong{
+        margin-left: 14.5rem;
+    }
+
+    .sub-title-burguers{
+        width: 20rem;
+        margin: auto;
+        font-size: 21px;
+    }
+
+    .title-burguers{
+        margin-top: 2rem;
+    }
+
+    .paragrafo-buguers{
+        width: 45rem;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .sub-events{
+        font-size: 3rem;
+    }
+
+    .paragrafo-events{
+        font-size: 2rem;
+        margin-right: 5rem;
+    }
+
+    .events-img > img{
+        position: relative;
+        left: 3rem;
+    }
+
+    .resevarion{
+        margin-left: 1.5px;
+    }
+
+    .inputs-container-reserva{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 45%;
+        position: relative;
+        right: 10rem;
+    }
+
+    .reservar-button{
+        height: 3rem;
+    }
+
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .locals-emails-footer{
+        position: relative;
+        top: -5rem;
+    }
+}
+
+@media (max-width: 836px) {
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero{
+        text-align: center;
+    }
+
+    .week-text-hero{
+        margin-right: 15rem;
+    }
+
+    .imagem-hero > img{
+        position: relative;
+        left: 1rem;
+        top: -15rem;
+    }
+
+    .section-banners{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: auto;
+    }
+
+    .banner-1{
+        position: relative;
+        top: 4rem;
+        margin-right: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .sub-banner-2 > strong{
+        margin-left: 14.5rem;
+    }
+
+    .sub-title-burguers{
+        width: 20rem;
+        margin: auto;
+        font-size: 21px;
+    }
+
+    .title-burguers{
+        margin-top: 2rem;
+    }
+
+    .paragrafo-buguers{
+        width: 45rem;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .sub-events{
+        font-size: 3rem;
+    }
+
+    .paragrafo-events{
+        font-size: 2rem;
+        margin-right: 5rem;
+    }
+
+    .resevarion{
+        margin-left: 5rem;
+    }
+
+    .inputs-container-reserva{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 45%;
+        position: relative;
+        right: 10rem;
+    }
+
+    .reservar-button{
+        height: 3rem;
+    }
+
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .locals-emails-footer{
+        position: relative;
+        top: -5rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text-hero-pontilhada{
+        margin-top: 10rem;
+    }
+
+    .week-text-hero{
+        margin-right: 12rem;
+    }
+
+    .imagem-hero > img{
+        position: relative;
+        top: -35vh;
+        max-width: 100%;
+        display: block;
+    }
+
+    .section-banners{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .banner-1{
+        margin-right: 7rem;
+        margin-top: 4rem;
+    }
+
+    .sub-banner-2 > strong{
+        margin-left: 5.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .sub-title-burguers{
+        width: 25rem;
+        margin: 0 auto;
+        margin-left: 15rem;
+        margin-bottom: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .title-burguers{
+        font-size: 2.5rem;
+    }
+
+    .paragrafo-buguers{
+        display: block;
+        width: 45rem;
+        font-size: 1.5rem;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .card-item-3{
+        height: 35rem;
+    }
+
+    .paragrafo-card-1, .paragrafo-card-2, .paragrafo-card-3{
+        font-size: 1.5rem;
+    }
+
+    .event{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .sub-events{
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .title-events{
+        margin-left: 3rem;
+    }
+
+    .title-events > strong{
+        margin-left: 2rem;
+    }
+
+    .paragrafo-events{
+        margin-right: 5rem;
+        font-size: 20px;
+    }
+
+    .events-img > img{
+        margin-left: 5rem;
+    }
+
+    .containe-reservation{
+        margin-left: 2rem;
+    }
+
+    .inputs-container-reserva{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 25rem;
+        margin: auto;
+        margin-left: 20rem;
+        margin-top: 2rem;
+    }
+
+    .reservar-button{
+        height: 3rem;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .locals-emails-footer{
+        margin-top: -25px;
+        margin-left: 5rem;
+    }
+
+}
+
+
+/* Nav-bar responsiva */
+@media (max-width: 1142px) {
+
+    .logo-dark{
+       display: none;
+    }
+
+    .logo-white{
+        display: block;
+        width: 20rem;
+        padding: 2rem;
+        margin-left: 2rem;
+    }
+    
+    .container{
+        background: rgb(98, 21, 21);
+    }
+    
+    .nav-bar{
+        display: none
+    }
+
+    .menu-burguer{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 2.8rem;
+        color: white;
+    }
+}
